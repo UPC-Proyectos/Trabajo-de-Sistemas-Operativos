@@ -1,0 +1,131 @@
+/* Estilos para la página de registro */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupar toda la pantalla verticalmente */
+  background-color: #f4f6f9; /* Color de fondo claro */
+  padding: 20px; /* Asegura que el contenido no toque los bordes */
+}
+
+.register-card {
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 16px; /* Bordes redondeados */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05); /* Sombra */
+  max-width: 500px; /* Ancho máximo */
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Alineación del texto al centro */
+  margin: auto; /* Centra el card verticalmente */
+}
+
+.register-title {
+  font-size: 24px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.full-width {
+  width: 100%; /* Ancho completo para los campos */
+}
+
+.name-fields,
+.password-fields {
+  display: flex; /* Flexbox para disposición en línea */
+  gap: 10px; /* Espacio entre los campos */
+}
+
+mat-form-field {
+  margin-bottom: 16px; /* Margen inferior de los campos */
+}
+
+.submit-btn {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 12px 0; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave en hover */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+.submit-btn:disabled {
+  background-color: #cfd8dc; /* Color de fondo para botón deshabilitado */
+}
+
+/* Estilos para el texto de OAuth */
+.oauth-text {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Estilos para los botones OAuth */
+.oauth-button-wrapper {
+  display: flex; /* Flexbox para los botones de OAuth */
+  flex-direction: column; /* Disposición vertical */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.oauth-button {
+  display: flex; /* Flexbox para los botones */
+  justify-content: center; /* Centrar contenido */
+  align-items: center; /* Centrar verticalmente */
+  padding: 12px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  border: 1px solid transparent; /* Sin borde por defecto */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  transition: all 0.3s ease; /* Transición suave */
+  width: 100%; /* Ancho completo */
+}
+
+.oauth-button svg {
+  width: 24px; /* Ancho del ícono */
+  height: 24px; /* Alto del ícono */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.google-button {
+  background-color: white; /* Fondo blanco para el botón de Google */
+  border: 1px solid #d1d5db; /* Borde gris claro */
+  color: #555555; /* Color del texto de Google */
+}
+
+.github-button {
+  background-color: #181717; /* Fondo negro para el botón de GitHub */
+  color: white; /* Color del texto en el botón de GitHub */
+}
+
+.oauth-button:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+  border-color: rgba(0, 0, 0, 0.1); /* Añadir borde suave en hover */
+}
+
+/* Estilos para el texto de login */
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .name-fields,
+  .password-fields {
+    flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+  }
+}

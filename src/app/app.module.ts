@@ -6,16 +6,22 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router'; // Importa RouterModule
+import { MatDatepickerModule } from '@angular/material/datepicker'; // Para el selector de fechas
+import { MatNativeDateModule } from '@angular/material/core'; // Necesario para el selector de fechas
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { AppRoutingModule } from './app-routing.module'; // Asegúrate de importar tu AppRoutingModule
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { RegisterComponent } from './register/register.component'; // Importa tu componente
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotPasswordComponent,
+    RegisterComponent // Declara el componente de registro
   ],
   imports: [
     BrowserModule,
@@ -25,8 +31,9 @@ import { AppRoutingModule } from './app-routing.module'; // Asegúrate de import
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    RouterModule, // Asegúrate de importar RouterModule
-    AppRoutingModule // Asegúrate de importar el módulo de rutas
+    MatDatepickerModule, // Para el selector de fechas
+    MatNativeDateModule, // Para habilitar el selector de fechas
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
